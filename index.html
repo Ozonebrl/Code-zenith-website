@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Code Zenith | Empowering IT Solutions</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Zenith Pvt. Ltd.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
-    .bg-custom-red { background-color: #d70000; }
-    .text-custom-red { color: #d70000; }
-    .btn-custom-red { background-color: #d70000; color: #fff; }
-    .btn-custom-red:hover { background-color: #bb0000; color: #fff; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .bg-custom-red {
+      background-color: #8B0101 !important;
+    }
+    .text-custom-red {
+      color: #8B0101 !important;
+    }
+    .btn-custom-red {
+      background-color: #8B0101;
+      color: #fff;
+      border-color: #8B0101;
+    }
+    .btn-custom-red:hover {
+      background-color: #6a0000;
+      border-color: #6a0000;
+    }
+    .navbar-light .navbar-nav .nav-link {
+      color: rgba(0,0,0,0.7);
+      font-weight: 500;
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: #8B0101;
+    }
+    .footer-section {
+      background-color: #111;
+      color: #ddd;
+      padding-top: 60px;
+    }
+    .footer-section a {
+      color: #bbb;
+      text-decoration: none;
+    }
+    .footer-section a:hover {
+      color: #fff;
+    }
+    .social-icon {
+      color: white;
+      font-size: 1.2rem;
+    }
   </style>
 </head>
 <body>
@@ -28,21 +65,27 @@
   </div>
 </div>
 
-<!-- Header -->
-<header class="bg-light py-3 border-bottom">
-  <div class="container d-flex justify-content-between align-items-center">
-    <h3 class="m-0 text-custom-red">Code Zenith</h3>
-    <nav>
-      <a href="index.php" class="text-dark me-3">Home</a>
-      
-      <a href="products.php" class="text-dark me-3">Products</a>
-      <a href="about.php" class="text-dark me-3">About</a>
-      <a href="contact.php" class="text-dark">Contact</a>
-    </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.png" alt="Logo" height="55" class="me-2">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </div>
-</header>
+</nav>
 
-<!-- Hero Section (Red) -->
+<!-- Hero Section -->
 <section class="hero-section bg-custom-red text-white py-5">
   <div class="container">
     <div class="row align-items-center">
@@ -71,9 +114,7 @@
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 shadow-sm border-0">
-          <div class="card-img-top overflow-hidden">
-            <img src="images/web.jpg" class="img-fluid w-100" alt="Web Development" style="height: 200px; object-fit: cover;">
-          </div>
+          <img src="images/web.jpg" class="card-img-top" style="height: 200px; object-fit: cover;">
           <div class="card-body text-center">
             <h5 class="card-title text-custom-red">Web Development</h5>
             <p class="card-text text-muted">Professional websites and web applications tailored to your brand and business goals.</p>
@@ -83,9 +124,7 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100 shadow-sm border-0">
-          <div class="card-img-top overflow-hidden">
-            <img src="images/marketing.jpg" class="img-fluid w-100" alt="Digital Marketing" style="height: 200px; object-fit: cover;">
-          </div>
+          <img src="images/marketing.jpg" class="card-img-top" style="height: 200px; object-fit: cover;">
           <div class="card-body text-center">
             <h5 class="card-title text-custom-red">Digital Marketing</h5>
             <p class="card-text text-muted">Data-driven marketing strategies to grow your audience and increase conversions.</p>
@@ -95,9 +134,7 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100 shadow-sm border-0">
-          <div class="card-img-top overflow-hidden">
-            <img src="images/design.jpg" class="img-fluid w-100" alt="Graphics Design" style="height: 200px; object-fit: cover;">
-          </div>
+          <img src="images/design.jpg" class="card-img-top" style="height: 200px; object-fit: cover;">
           <div class="card-body text-center">
             <h5 class="card-title text-custom-red">Graphics Designing</h5>
             <p class="card-text text-muted">Creative visual designs that make your brand stand out and communicate effectively.</p>
@@ -109,86 +146,62 @@
   </div>
 </section>
 
-<!-- Featured Products Carousel -->
-<section class="py-5 bg-custom-red text-white">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="mb-3">Featured Products</h2>
-      <p class="lead opacity-75">Quality IT equipment and accessories</p>
-    </div>
-    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner rounded shadow-lg">
-        <div class="carousel-item active">
-          <div class="d-flex justify-content-center position-relative">
-            <img src="images/monitor.jpg" class="d-block img-fluid" style="max-height: 300px;" alt="Product 1">
-            <div class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-75 p-3">
-              <h5>Premium Monitors</h5>
-              <p>High-resolution displays for professionals</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center position-relative">
-            <img src="images/keyboard.jpg" class="d-block img-fluid" style="max-height: 300px;" alt="Product 2">
-            <div class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-75 p-3">
-              <h5>Mechanical Keyboards</h5>
-              <p>Ergonomic design for comfortable typing</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- Why Choose Us Section -->
-<section class="py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="text-custom-red mb-3">Why Choose Us?</h2>
-      <p class="lead text-muted">We combine experience, innovation, and commitment to deliver outstanding IT solutions</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-md-4 text-center">
-        <div class="bg-light p-4 rounded h-100">
-          <i class="bi bi-award text-custom-red display-5 mb-3"></i>
-          <h4 class="text-custom-red">Expert Team</h4>
-          <p>Our certified professionals bring years of industry experience to every project.</p>
-        </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="bg-light p-4 rounded h-100">
-          <i class="bi bi-people text-custom-red display-5 mb-3"></i>
-          <h4 class="text-custom-red">Client-Centric Approach</h4>
-          <p>We prioritize your needs and work closely with you to achieve your goals.</p>
-        </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="bg-light p-4 rounded h-100">
-          <i class="bi bi-shield-check text-custom-red display-5 mb-3"></i>
-          <h4 class="text-custom-red">Quality Assurance</h4>
-          <p>Rigorous testing and quality checks ensure flawless deliverables.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Footer -->
-<footer class="bg-dark text-white py-4">
-  <div class="container text-center">
-    <p class="mb-0">&copy; 2025 Code Zenith Pvt. Ltd. All rights reserved.</p>
+<footer class="footer-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <h5 class="text-white mb-4">About Code Zenith</h5>
+        <p>We are a leading IT solutions provider in Nepal, offering comprehensive services to help businesses grow in the digital world.</p>
+        <div class="mt-4">
+          <a href="#" class="social-icon me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="text-white mb-4">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#">Home</a></li>
+          <li class="mb-2"><a href="#">Services</a></li>
+          <li class="mb-2"><a href="#">Products</a></li>
+          <li class="mb-2"><a href="#">About Us</a></li>
+          <li class="mb-2"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="text-white mb-4">Our Services</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#">Web Development</a></li>
+          <li class="mb-2"><a href="#">Digital Marketing</a></li>
+          <li class="mb-2"><a href="#">Graphics Design</a></li>
+          <li class="mb-2"><a href="#">SEO Services</a></li>
+          <li class="mb-2"><a href="#">IT Training</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="text-white mb-4">Contact Us</h5>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="bi bi-geo-alt me-2"></i> Pokhara, Kaski, Nepal</li>
+          <li class="mb-3"><i class="bi bi-telephone me-2"></i> 9869841544</li>
+          <li class="mb-3"><i class="bi bi-envelope me-2"></i> contact@codezenith.com</li>
+          <li><i class="bi bi-clock me-2"></i> Sun-Fri: 9AM - 5PM</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="my-4 bg-secondary">
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="mb-0">&copy; 2025 Code Zenith. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p class="mb-0">Designed by Code Zenith Team</p>
+      </div>
+    </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
