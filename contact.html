@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code Zenith Pvt. Ltd. - Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .bg-custom-red {
+      background-color: #8B0101 !important;
+    }
+    .text-custom-red {
+      color: #8B0101 !important;
+    }
+    .btn-custom-red {
+      background-color: #8B0101;
+      color: #fff;
+      border-color: #8B0101;
+    }
+    .btn-custom-red:hover {
+      background-color: #6a0000;
+      border-color: #6a0000;
+    }
+    .navbar-light .navbar-nav .nav-link {
+      color: rgba(0,0,0,0.7);
+      font-weight: 500;
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: #8B0101;
+    }
+    .footer-section {
+      background-color: #111;
+      color: #ddd;
+      padding-top: 60px;
+    }
+    .footer-section a {
+      color: #bbb;
+      text-decoration: none;
+    }
+    .footer-section a:hover {
+      color: #fff;
+    }
+    .social-icon {
+      color: white;
+      font-size: 1.2rem;
+    }
+    /* Contact page specific styles */
+    .contact-hero {
+      background: linear-gradient(135deg, #8B0101 0%, #8B0101 100%);
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.05)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+      background-size: cover;
+      pointer-events: none;
+    }
+    .contact-card {
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      border: none;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+    .contact-icon {
+      font-size: 2.5rem;
+      color: #8B0101;
+      margin-bottom: 1rem;
+    }
+    .form-control:focus {
+      border-color: #8B0101;
+      box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+    }
+    .btn-danger {
+      background-color: #8B0101;
+      border: none;
+      padding: 10px 25px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .btn-danger:hover {
+      background-color: #8B0101;
+      transform: translateY(-2px);
+    }
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+    .contact-info-icon {
+      font-size: 1.5rem;
+      color: #8B0101;
+      margin-right: 1rem;
+      margin-top: 0.25rem;
+    }
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #f8f9fa;
+      color: #8B0101;
+      border-radius: 50%;
+      margin-right: 10px;
+      transition: all 0.3s ease;
+    }
+    .social-icon:hover {
+      background: #8B0101;
+      color: white;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header (simplified for demo) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand text-custom-red fw-bold" href="#">Code Zenith</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Top Contact Bar -->
+<div class="bg-custom-red text-white py-2">
+  <div class="container d-flex justify-content-between align-items-center small">
+    <div><i class="bi bi-telephone me-2"></i> 9869841544</div>
+    <div><i class="bi bi-envelope me-2"></i> contact.codezenithnepal@gmail.com</div>
+    <div>
+      <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Hero Section -->
+<section class="contact-hero text-white">
+  <div class="container text-center position-relative">
+    <h1 class="fw-bold display-4 mb-3">Let's Connect</h1>
+    <p class="lead mb-4">We're here to help and answer any questions you might have. Reach out to us and we'll respond as soon as possible.</p>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="#contact-form" class="btn btn-light btn-lg px-4">Send Message</a>
+      <a href="tel:+9779869141544" class="btn btn-outline-light btn-lg px-4">
+        <i class="bi bi-telephone-fill me-2"></i>Call Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- How Can We Help You -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <h2 class="text-danger mb-3">How Can We Help You?</h2>
+        <p class="lead">Whether you have questions about our services, need technical support, or want to discuss a potential project, our team is ready to assist you.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 contact-card p-4 text-center">
+          <div class="contact-icon">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <h4>Email Us</h4>
+          <p class="text-muted">Have questions? Send us an email and we'll get back to you within 24 hours.</p>
+          <a href="mailto:contact.codezenith@gmail.com" class="btn btn-outline-danger">contact.codezenith@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 contact-card p-4 text-center">
+          <div class="contact-icon">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <h4>Call Us</h4>
+          <p class="text-muted">Prefer to talk? Give us a call during our business hours (9AM-5PM, Sun-Fri).</p>
+          <a href="tel:+9779869141544" class="btn btn-outline-danger">+977-9869141544</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 contact-card p-4 text-center">
+          <div class="contact-icon">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <h4>Visit Us</h4>
+          <p class="text-muted">Come say hello at our office in Kathmandu, Nepal.</p>
+          <address>New Road, Kathmandu, Nepal</address>
+          <a href="https://goo.gl/maps/5QkP1YHz9Mq5PvhS8" target="_blank" class="btn btn-outline-danger">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="mb-4 text-center text-danger">Send Us a Message</h2>
+        <form id="contact-form" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="name" placeholder="Your full name" required />
+            <div class="invalid-feedback">Please enter your full name.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" id="email" placeholder="Your email address" required />
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="subject" placeholder="Subject of your message" required />
+            <div class="invalid-feedback">Please enter a subject.</div>
+          </div>
+
+          <div class="mb-4">
+            <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+            <div class="invalid-feedback">Please write a message.</div>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
+          </div>
+
+          <div id="form-status" class="mt-3"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section mt-5">
+  <div class="container">
+    <div class="row pb-4">
+      <div class="col-md-4 mb-4">
+        <h5 class="text-white">Code Zenith Pvt. Ltd.</h5>
+        <p>Tailored software and web design solutions. Quality computer retail and repair services.</p>
+        <div class="d-flex">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="text-white">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="text-white">Contact Info</h5>
+        <p><i class="bi bi-telephone me-2"></i> +977-9869841544</p>
+        <p><i class="bi bi-envelope me-2"></i> contact.codezenithnepal@gmail.com</p>
+        <p><i class="bi bi-geo-alt me-2"></i> New Road, Kathmandu, Nepal</p>
+      </div>
+    </div>
+    <div class="text-center pb-3 border-top border-secondary">
+      <small>&copy; 2025 Code Zenith Pvt. Ltd. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Bootstrap form validation and custom message logic
+  (function () {
+    'use strict';
+    const form = document.getElementById('contact-form');
+    const statusDiv = document.getElementById('form-status');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      // Reset status
+      statusDiv.innerHTML = '';
+      statusDiv.className = '';
+
+      if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        return;
+      }
+
+      // Simulate sending the form (e.g., AJAX call to backend)
+      // Here, just show success after 1 second
+      statusDiv.innerHTML = '<div class="alert alert-info">Sending your message...</div>';
+      setTimeout(() => {
+        statusDiv.innerHTML = '<div class="alert alert-success">Thank you for contacting us! We will get back to you soon.</div>';
+        form.reset();
+        form.classList.remove('was-validated');
+      }, 1000);
+    }, false);
+  })();
+</script>
+
+</body>
+</html>
